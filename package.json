@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "server": "(cd server && ../node_modules/pouchdb-server/bin/pouchdb-server --port 5984)",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "slides": "(cd slides && ../node_modules/live-server/live-server.js)"
   },
   "keywords": [],
   "author": "Christian Liebel",
   "license": "UNLICENSED",
   "dependencies": {
+    "live-server": "^0.9.1",
     "pouchdb-server": "^1.0.1"
   }
 }
