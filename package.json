@@ -1,0 +1,16 @@
+{
+  "name": "pouchdb-playground",
+  "version": "1.0.0",
+  "description": "Playground for PouchDB",
+  "main": "index.js",
+  "scripts": {
+    "server": "(cd server && ../node_modules/pouchdb-server/bin/pouchdb-server --port 5984)",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Christian Liebel",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "pouchdb-server": "^1.0.1"
+  }
+}
