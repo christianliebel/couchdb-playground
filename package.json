@@ -12,6 +12,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "live-server": "^0.9.1",
+    "pouchdb": "^5.2.1",
     "pouchdb-server": "^1.0.1"
   }
 }
