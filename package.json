@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "(cd server && ../node_modules/pouchdb-server/bin/pouchdb-server --port 5984)",
-    "slides": "(cd slides && ../node_modules/live-server/live-server.js)"
+    "slides": "./node_modules/live-server/live-server.js --open=slides --ignore=server,client"
   },
   "keywords": [],
   "author": "Christian Liebel",
