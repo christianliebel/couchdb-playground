@@ -92,6 +92,7 @@
 						<ul>
 							<li>Main category of NoSQL databases</li>
 							<li>Schemaless, weakly typed</li>
+							<li>Database: Collection of documents</li>
 							<li>Distributed, scalable</li>
 							<li>RESTful API</li>
 						</ul>
@@ -100,8 +101,8 @@
 						<h2>REST</h2>
 						<ul>
 							<li><strong>Re</strong>presentational <strong>S</strong>tate <strong>T</strong>ransfer</li>
-							<li>Architectural Style</li>
-							<li>Example using HTTP (<em>Hypertext Transfer Protocol</em>) methods</li>
+							<li>Architectural style, no standard</li>
+							<li><strong>Example</strong> using HTTP (<em>Hypertext Transfer Protocol</em>) methods</li>
 							<ul>
 								<li>Collections: <code>http://example.com/users/</code></li>
 								<li>Entities: <code>http://example.com/users/user1</code></li>
@@ -123,8 +124,8 @@
 							<tr>
 								<td><strong>Action</strong></td>
 								<td>Read</td>
-								<td>Update</td>
-								<td>Create</td>
+								<td>Create/Update</td>
+								<td>Insert</td>
 								<td>Delete</td>
 							</tr>
 							</tbody>
@@ -220,8 +221,32 @@
 							<li>Emulates CouchDB’s API</li>
 							<li>Data is stored locally (IndexedDB/Web SQL)</li>
 							<li>Sync to CouchDB/offline support</li>
+							<li>Asynchronous API (Promise-based)</li>
 						</ul>
                     </section>
+					<section>
+						<h2>PouchDB</h2>
+						<p>(Direct usage, no local sync)</p>
+						<pre><code class="hljs" data-trim contenteditable id="jsconsole">
+var db = new PouchDB('http://localhost:5984/students');
+
+var student = {
+  _id: "neustudent",
+  firstName: "",
+  name: "",
+  age: 37
+};
+
+db.put(student)
+  .then(function () {
+    return db.get(student._id);
+  })
+  .then(function (res) {
+    alert(JSON.stringify(res));
+  });
+						</code></pre>
+						<button onclick="eval(document.querySelector('#jsconsole').innerText);" style="font-size: 30pt;">Run!</button>
+					</section>
                 </section>
 
 				<section>
