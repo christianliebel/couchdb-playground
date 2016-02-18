@@ -5,7 +5,8 @@ More information about CouchDB can be found in the slides ([uploaded here](https
 
 ## Setup
 * Clone this repository.
-* Optional: Run `nvm use` if you are using nvm.
+* Optional: Install [Node.js](https://nodejs.org).
+* Optional: Run `nvm use` if you are using [nvm](https://github.com/creationix/nvm).
 * Run `npm i` in order to install all dependencies.
 
 ## Launch
