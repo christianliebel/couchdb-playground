@@ -6,7 +6,7 @@
 * Run `npm i` in order to install all dependencies.
 
 ## Launch
-* `npm run slides` launches the slides
+* `npm run slides` launches the slides ([or check them out here](https://speakerdeck.com/chliebel/couchdb-a-database-that-completely-embraces-the-web))
 * `npm run server` launches a PouchDB server on the default port 5984
 
 ## Legal Notes
