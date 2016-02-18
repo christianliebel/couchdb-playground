@@ -1,13 +1,16 @@
 # CouchDB: A Database That Completely Embraces The Web
+This repository provides a playground for CouchDB using [PouchDB server](https://github.com/pouchdb/pouchdb-server), an installation-free CouchDB instance.
+
+More information about CouchDB can be found in the slides ([uploaded here](https://speakerdeck.com/chliebel/couchdb-a-database-that-completely-embraces-the-web)).
 
 ## Setup
 * Clone this repository.
-* Optional: Run `nvm use` if you are using nvm
+* Optional: Run `nvm use` if you are using nvm.
 * Run `npm i` in order to install all dependencies.
 
 ## Launch
-* `npm run slides` launches the slides ([or check them out here](https://speakerdeck.com/chliebel/couchdb-a-database-that-completely-embraces-the-web))
 * `npm run server` launches a PouchDB server on the default port 5984
+* `npm run slides` launches the slides ([or check them out here](https://speakerdeck.com/chliebel/couchdb-a-database-that-completely-embraces-the-web))
 
 ## Further reading
 * **NoSQL**
